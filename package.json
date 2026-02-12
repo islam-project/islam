@@ -1,0 +1,13 @@
+{
+  "name": "quran-platform",
+  "version": "1.0.0",
+  "description": "Islamic Quran Platform with Live Streaming, Audio Player, and Radio",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "build": "echo 'Build completed successfully'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": ["quran", "islamic", "streaming", "radio"],
+  "author": "",
+  "license": "MIT"
+}

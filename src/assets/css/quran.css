@@ -1,0 +1,124 @@
+.quran-page {
+    padding: 2rem 0;
+    min-height: calc(100vh - 140px);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #667eea;
+}
+
+body.dark-theme .page-header {
+    border-bottom-color: #818cf8;
+}
+
+.quran-player-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.player-card {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 2rem;
+}
+
+body.dark-theme .player-card {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.selection-group {
+    margin-bottom: 2rem;
+}
+
+.selection-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #667eea;
+}
+
+body.dark-theme .selection-group label {
+    color: #818cf8;
+}
+
+.form-select {
+    border-radius: 10px;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+body.dark-theme .form-select {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-dark);
+}
+
+body.dark-theme .form-select:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 0.2rem rgba(129, 140, 248, 0.25);
+}
+
+.search-input {
+    border-radius: 10px;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.search-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+body.dark-theme .search-input {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-dark);
+}
+
+.audio-player-wrapper {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+}
+
+body.dark-theme .audio-player-wrapper {
+    background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
+}
+
+#audioPlayer {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.toggle-search-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .player-card {
+        padding: 1rem;
+    }
+
+    .selection-group {
+        margin-bottom: 1.5rem;
+    }
+}

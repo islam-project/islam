@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'SegoeUI';
+    src: url(../fonts/SEGOEUI.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #1a1a1a;
+    --text-light: #212529;
+    --text-dark: #f1f1f1;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #2d2d2d;
+    --border-light: #dee2e6;
+    --border-dark: #444444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SegoeUI', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 70px;
+    min-height: 100vh;
+}
+
+body.dark-theme {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark-theme .navbar {
+    background-color: #0d0d0d !important;
+}
+
+body.dark-theme .card {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-dark);
+}
+
+body.dark-theme .dropdown-menu {
+    background-color: var(--card-bg-dark);
+    border-color: var(--border-dark);
+}
+
+body.dark-theme .dropdown-item {
+    color: var(--text-dark);
+}
+
+body.dark-theme .dropdown-item:hover {
+    background-color: #444444;
+}
+
+body.dark-theme footer {
+    background-color: #0d0d0d !important;
+}
+
+.live-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.navbar-brand .material-icons {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+#themeToggle {
+    border: none;
+    background: transparent;
+}
+
+#themeToggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0;
+    }
+}
